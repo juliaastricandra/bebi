@@ -15,9 +15,9 @@ musikku.loop = true;
 async function start() {
   musikku.play();
   formKu();
-  const inputSayang = document.querySelectorAll("input")[0];
-  const inputKangen = document.querySelectorAll("input")[1];
-  const inputPesan = document.querySelectorAll("input")[2];
+  inputSayang = document.querySelectorAll("input")[0];
+  inputKangen = document.querySelectorAll("input")[1];
+  inputPesan = document.querySelectorAll("input")[2];
   await dekatutorial.fire({
     imageUrl: "https://dekatutorial.github.io/19gombal/stikerkuy/akuadapertanyaan.gif",
     title: "Haii sayangku!",
@@ -56,7 +56,7 @@ function sayangGak() {
           .fire({
             showDenyButton: true,
             imageUrl: "https://dekatutorial.github.io/19gombal/stikerkuy/yakinihgasayang.gif",
-            title: "Yakin nih gak sayang sama Dudut?",
+            title: "Yakin nih ga sayang sama Dudut?",
             denyButtonText: "Gak!",
             confirmButtonText: "Sayang",
           })
